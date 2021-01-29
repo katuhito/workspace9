@@ -10,7 +10,7 @@ img = cv2.imread("girl.jpg")
 img_gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
 # 顔認識を実行
-face_list = cascade.detectMultiScale(img_gray, minSize=(400, 400))
+face_list = cascade.detectMultiScale(img_gray, minSize=(150, 150))
 
 # 結果を確認
 if len(face_list) == 0:
